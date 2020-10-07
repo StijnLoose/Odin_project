@@ -1,0 +1,92 @@
+<html>
+<style>
+    body {
+        background-color: white;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .hoofd {
+        
+        background-color: rgb(60, 50, 205);
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        justify-self: auto;
+    }
+    .form_head{
+        background-color: wheat;
+        align-self: start;
+        
+        
+    }
+    .knop_head{
+        background-color: violet;
+        color:maroon;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .inhoud{
+        grid-area: "content";
+        background-color: tomato;
+        align-self: 100vh;
+        justify-self: 100vh;
+        display: grid;
+        grid-template-rows: 20vh 40vh 40vh;
+    }
+
+    .voet{
+        grid-area: "onder";
+        background-color: teal;
+    }
+    .prent{    
+        grid-area: 1/1/1/5;
+    }
+    .formulier{
+        display: grid;
+
+    }
+</style>
+
+<body>
+    <div class="hoofd">
+        <form class="form_head" action="https://www.google.com/intl/nl/gmail/about/">
+            <button class="knop_head" type="submit" value="gmail">gmail</button>
+        </form>
+        <form class="form_head" action="https://www.google.be/imghp?hl=nl&tab=wi&ogbl">
+            <button class="knop_head" type="submit">afbeeldingen</button>
+        </form>
+        <form class="form_head" action="https://www.google.be/intl/nl/about/products?tab=ih">
+            <button class="knop_head">fig</button>
+        </form>
+        <form class="form_head"  action="https://accounts.google.com/signin/v2/identifier?hl=nl&passive=true&continue=https%3A%2F%2Fwww.google.be%2Fimghp%3Fhl%3Dnl%26tab%3Dwi%26ogbl&ec=GAZAAg&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+            <button class="knop_head">inloggen</button>
+        </form>
+    </div>
+    
+    <div class="inhoud">
+        <p class="prent">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </p>
+        <form action="http://www.google.com">
+            <input type="text" placeholder="" required>
+            <button type="submit">zoeken</button>
+            <button type="submit">ik doe een gok</button>
+         </form>
+         <div>
+             hier staat straks niets
+         </div>
+    </div>
+    <div class="voet">de onderkant</div>
+  
+
+
+</body>
+
+
+
+
+
+</html>
