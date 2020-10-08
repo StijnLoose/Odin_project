@@ -4,35 +4,40 @@
 
 <style>
 .page-wrap {
-  display: -webkit-flex;          /* NEW - Chrome */
   display: flex;    
-  flex-direction: column;               /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  flex-direction: column;
   vertical-align: center;
+  align-content: stretch;
   flex: 1;
  }
 
 .main-content {
-  -webkit-order: 2;               /* NEW - Chrome */
-  order: 2;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  padding: 5px;
-  width: 100%;                  /* No flex here, other cols take up remaining space */
-  background: white;
+    flex: 2;
+    flex-direction: row;
+    justify-items: center;
+    align-self: stretch;
+    padding: 5px;
+    width: 100%;                  
+    background: white;
 }
 
-a {
-    padding: 15px;
-}
 
 body {
   padding: 5px;
   background: #79a693;
+  height: 100%;
 }
 
 .boven {
     display: flex;
+    flex-direction: row;
     justify-items: end;
     justify-content: right;
     column-gap: 10px;
+}
+
+a{
+    padding-right: 15px;
 }
 
 form{
@@ -42,7 +47,7 @@ form{
 
 button {
     border-color: white;
-    padding: 0px;
+    padding: 5px;
     background-color: rgb(255, 255, 255);
     margin: 0px;
     border-width: 0px;
@@ -115,7 +120,7 @@ a:hover{
             
         </section>
         <section class="main-content">
-            <p>google aangeboden in:</p>
+            <p padding=15px>google aangeboden in:</p>
             <a href="https://www.google.be/setprefs?sig=0_hFgw9Pl3Du_nrFa125j7X5dZg_U%3D&hl=fr&source=homepage&sa=X&ved=0ahUKEwjhjKnyuqTsAhXEqaQKHfU-D2gQ2ZgBCBA">
                 Français
             </a>
