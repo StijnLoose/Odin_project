@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<style>
+.page-wrap {
+  display: -webkit-flex;          /* NEW - Chrome */
+  display: flex;    
+  flex-direction: column;               /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  vertical-align: center;
+  flex: 1;
+ }
+
+.main-content {
+  -webkit-order: 2;               /* NEW - Chrome */
+  order: 2;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  padding: 5px;
+  width: 100%;                  /* No flex here, other cols take up remaining space */
+  background: white;
+}
+
+a {
+    padding: 15px;
+}
+
+body {
+  padding: 5px;
+  background: #79a693;
+}
+
+.boven {
+    display: flex;
+    justify-items: end;
+    justify-content: right;
+    column-gap: 10px;
+}
+
+form{
+    margin: 0px;
+}
+
+button {
+    border-color: white;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    border-width: 0px;
+}
+
+
+
+button:hover{
+    text-decoration: underline;
+    cursor:-webkit-grabbing;
+    }
+
+
+.form-login{
+    background-color: mediumblue;
+    color: white;
+}
+
+.middenknop{
+    background-color: lightgray;
+    color: darkslategray;
+}
+
+
+</style>
+
+<head>
+    <title>poging tot google pagina</title>
+</head>
+
+
+<body>
+    <div class="page-wrap">
+        <section class="main-content">
+            <div class="boven">
+                <form action="https://www.google.com/intl/nl/gmail/about/" target="_blank">
+                    <button>Gmail<a href="https://www.google.com/intl/nl/gmail/about/" target="_blank"></a></button>
+                </form>
+            <form action="https://www.google.be/imghp?hl=nl&tab=wi&ogbl">
+                <button>afbeeldingen<a href="https://www.google.be/imghp?hl=nl&tab=wi&ogbl"></a></button>
+            </form>
+            <form action="https://www.google.be/intl/nl/about/products?tab=wh">
+                <button>figuur</button> 
+            </form>
+            <form  action="https://accounts.google.com/signin/v2/identifier?hl=nl&passive=true&continue=https%3A%2F%2Fwww.google.be%2F&ec=GAZAAQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                <button class="form-login"><strong>inloggen</strong></button>
+            </form>
+            </div>
+        </section>
+        <section class="main-content">
+            <div>
+                afbeelding
+            </div>
+            <div> 
+                <input type="text" placeholder="zoeken" autofocus> 
+            </div>
+            <div>
+                <button class="middenknop">google zoeken</button>
+                <button class="middenknop">ik doe een gok</button>
+            </div>
+            
+        </section>
+        <section class="main-content">
+            <p padding="15px">google aangeboden in:</p>
+            <a href="https://www.google.be/setprefs?sig=0_hFgw9Pl3Du_nrFa125j7X5dZg_U%3D&hl=fr&source=homepage&sa=X&ved=0ahUKEwjhjKnyuqTsAhXEqaQKHfU-D2gQ2ZgBCBA">
+                Français
+            </a>
+            <a href="https://www.google.be/setprefs?sig=0_hFgw9Pl3Du_nrFa125j7X5dZg_U%3D&hl=de&source=homepage&sa=X&ved=0ahUKEwjhjKnyuqTsAhXEqaQKHfU-D2gQ2ZgBCBE">
+                Deutsch
+            </a>
+            <a href="https://www.google.be/setprefs?sig=0_hFgw9Pl3Du_nrFa125j7X5dZg_U%3D&hl=en&source=homepage&sa=X&ved=0ahUKEwjhjKnyuqTsAhXEqaQKHfU-D2gQ2ZgBCBI">
+                English
+            </a>
+
+        </section>
+
+
+
+    </div>
+
+
+</body>
+
+
+
+
+
+</html>
