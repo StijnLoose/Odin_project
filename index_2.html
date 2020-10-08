@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 .page-wrap {
   display: -webkit-flex;          /* NEW - Chrome */
@@ -35,21 +37,27 @@ body {
 
 form{
     margin: 0px;
+    cursor: default;
 }
 
 button {
     border-color: white;
-    padding: 10px;
+    padding: 0px;
     background-color: rgb(255, 255, 255);
     margin: 0px;
     border-width: 0px;
+    cursor: default;
 }
-
-
 
 button:hover{
     text-decoration: underline;
-    cursor:-webkit-grabbing;
+    cursor: pointer;
+}
+
+
+a:hover{
+    text-decoration: underline;
+    cursor:pointer;
     }
 
 
@@ -62,6 +70,7 @@ button:hover{
     background-color: lightgray;
     color: darkslategray;
 }
+
 
 
 </style>
@@ -91,19 +100,22 @@ button:hover{
         </section>
         <section class="main-content">
             <div>
-                afbeelding
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
             </div>
             <div> 
-                <input type="text" placeholder="zoeken" autofocus> 
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" placeholder="zoek" autofocus> 
             </div>
             <div>
-                <button class="middenknop">google zoeken</button>
-                <button class="middenknop">ik doe een gok</button>
+                <form action="http://www.google.be">
+                 <button class="middenknop">google zoeken</button>
+                 <button class="middenknop">ik doe een gok</button>
+                </form>
             </div>
             
         </section>
         <section class="main-content">
-            <p padding="15px">google aangeboden in:</p>
+            <p>google aangeboden in:</p>
             <a href="https://www.google.be/setprefs?sig=0_hFgw9Pl3Du_nrFa125j7X5dZg_U%3D&hl=fr&source=homepage&sa=X&ved=0ahUKEwjhjKnyuqTsAhXEqaQKHfU-D2gQ2ZgBCBA">
                 Français
             </a>
