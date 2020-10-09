@@ -1,84 +1,176 @@
 <html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
     body {
         background-color: white;
         margin: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
+        height: 100%;
     }
-    .hoofd {
-        
-        background-color: rgb(60, 50, 205);
+    header {
+        background-color: hsl(202, 50%, 100%);
+        height: 5%;
+        padding-top: 5px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         justify-self: auto;
     }
-    .form_head{
+    .head_form{
         background-color: wheat;
-        align-self: start;
-        
-        
+        align-self: start;     
     }
+
     .knop_head{
-        background-color: violet;
-        color:maroon;
+        background-color: white;
         font-size: 18px;
         padding: 10px;
+        justify-self: center;
+        border: 0px;
+        font-size: 12px;
+
     }
+
+    button {
+        background-color: white;
+        color: hsl(0, 0%, 40%);
+        font-size: 18px;
+        padding: 10px;
+        justify-self: center;
+        border: 0px;
+        font-size: 12px;
+    }
+
     .inhoud{
-        grid-area: "content";
-        background-color: rgb(255, 255, 255);
-
-        display: grid;
-        grid-template-rows: 20vh 40vh 40vh;
+        height: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(150, 100%, 100%);
+    }
+    .inhoud_knop{
+        background-color: hsl(202, 15%, 93%);
+        font-size: 15px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .inhoud_knop:hover {
+        cursor: pointer;
     }
 
-    .voet{
-        grid-area: "onder";
-        background-color: teal;
+    footer {
+        height: 10%;
+        background-color:  hsl(202, 15%, 93%);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-self: flex-end;
+        justify-self: start;
     }
-    .prent{    
-        grid-area: 1/1/1/5;
-    }
-    .formulier{
-        display: grid;
 
+    a{
+        padding-left: 25px;
+    }
+
+    .knop_head:hover{
+    text-decoration: underline;
+    cursor:pointer;
+    }
+
+    .goologo{
+        margin-top: 10vh;
+        margin-bottom: 15px;
+        
+    }
+
+    .search_form{
+        margin: 5px;
+        padding: 0px;
+        width: 70vh;
+        height: 5vh;
+        border: 5px solid hsl(244, 50%, 50%);
+        vertical-align: center;
+    }
+
+    input[type=text] {
+        margin-top: 7px;
+        padding: 0px;
+        width: 50vh;
+        height: 25px;
+        border: 0px dashed hsl(150, 50%, 50%);   
+        align-self: center;     
+    }
+    
+    .par_search {
+        padding: 5px;
+        margin: 0px;
+        border-radius: 35px;
+        border: 2px solid hsl(202, 15%, 93%);
+        width: 75vh;
+        height: 45px;
+        align-self: center;
+    }
+
+    .par_lang{
+        font-size: 12px;
+        padding: 10px;
     }
 </style>
 
 <body>
-    <div class="hoofd">
-        <form class="form_head" action="https://www.google.com/intl/nl/gmail/about/">
+    <header>
+        <form class="head_form" action="https://www.google.com/intl/nl/gmail/about/">
             <button class="knop_head" type="submit" value="gmail">gmail</button>
         </form>
-        <form class="form_head" action="https://www.google.be/imghp?hl=nl&tab=wi&ogbl">
+        <form class="head_form" action="https://www.google.be/imghp?hl=nl&tab=wi&ogbl">
             <button class="knop_head" type="submit">afbeeldingen</button>
         </form>
-        <form class="form_head" action="https://www.google.be/intl/nl/about/products?tab=ih">
+        <form class="head_form" action="https://www.google.be/intl/nl/about/products?tab=ih">
             <button class="knop_head">fig</button>
         </form>
-        <form class="form_head"  action="https://accounts.google.com/signin/v2/identifier?hl=nl&passive=true&continue=https%3A%2F%2Fwww.google.be%2Fimghp%3Fhl%3Dnl%26tab%3Dwi%26ogbl&ec=GAZAAg&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+        <form class="head_form"  action="https://accounts.google.com/signin/v2/identifier?hl=nl&passive=true&continue=https%3A%2F%2Fwww.google.be%2Fimghp%3Fhl%3Dnl%26tab%3Dwi%26ogbl&ec=GAZAAg&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
             <button class="knop_head">inloggen</button>
         </form>
-    </div>
+    </header>
     
     <div class="inhoud">
-        <p class="prent">
+        <p class="goologo">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
         </p>
-        <form action="http://www.google.com">
-            <input type="text" placeholder="" required>
-            <button type="submit">zoeken</button>
-            <button type="submit">ik doe een gok</button>
-         </form>
-         <div>
-             hier staat straks niets
-         </div>
+        <p>
+            <p>
+                <form class="par_search" action="http://www.google.be">
+                    <i class="fa fa-search" style="color:rgb(122, 122, 122);padding: 15px;"></i>
+                    <input type="text" placeholder="" required autofocus>
+                </form>
+            </p>
+            <p> 
+                <form action="http://www.google.be">
+                    <button class="inhoud_knop" type="submit" target="_blank">Google zoeken</button>
+                    <button class="inhoud_knop" type="submit" target="_blank">Ik doe een gok</button>
+                </form>
+            </p>
+        </p>
+        <p></p>
+        <p class="par_lang">
+            Google aangeboden in:
+            <a href="https://www.google.be/setprefs?sig=0_hFgw9Pl3Du_nrFa125j7X5dZg_U%3D&hl=fr&source=homepage&sa=X&ved=0ahUKEwjhjKnyuqTsAhXEqaQKHfU-D2gQ2ZgBCBA">
+                Français
+            </a>
+            <a href="https://www.google.be/setprefs?sig=0_hFgw9Pl3Du_nrFa125j7X5dZg_U%3D&hl=de&source=homepage&sa=X&ved=0ahUKEwjhjKnyuqTsAhXEqaQKHfU-D2gQ2ZgBCBE">
+                Deutsch
+            </a>
+            <a href="https://www.google.be/setprefs?sig=0_hFgw9Pl3Du_nrFa125j7X5dZg_U%3D&hl=en&source=homepage&sa=X&ved=0ahUKEwjhjKnyuqTsAhXEqaQKHfU-D2gQ2ZgBCBI">
+                English
+            </a>
+        </p>
+        
     </div>
-    <div class="voet">de onderkant</div>
+     <footer>
+       links naar disclaimer etc
+       <input>
+   </footer>
   
 
 
