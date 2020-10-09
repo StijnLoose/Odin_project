@@ -6,7 +6,8 @@
         background-color: white;
         margin: 0px;
         height: 100%;
-    }
+        font-family: Arial, Helvetica, sans-serif;
+    } 
     header {
         background-color: hsl(202, 50%, 100%);
         height: 5%;
@@ -17,23 +18,35 @@
         justify-self: auto;
     }
     .head_form{
-        background-color: wheat;
+        background-color: hsl(202, 50%, 100%);
         align-self: start;     
     }
 
     .knop_head{
         background-color: white;
-        font-size: 18px;
+        font-size: 20px;
         padding: 10px;
+        margin: 10px;
         justify-self: center;
         border: 0px;
         font-size: 12px;
+    }
 
+    .knop_login{
+        background-color: hsl(209, 75%, 57%);
+        font-size: 20px;
+        font-weight: 800;
+        padding: 10px;
+        margin: 10px;
+        justify-self: center;
+        border: 0px;
+        font-size: 12px;
+        color: ivory;
     }
 
     button {
         background-color: white;
-        color: hsl(0, 0%, 40%);
+        color: hsl(0, 0%, 20%);
         font-size: 18px;
         padding: 10px;
         justify-self: center;
@@ -63,10 +76,31 @@
         height: 10%;
         background-color:  hsl(202, 15%, 93%);
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-self: flex-end;
-        justify-self: start;
+        flex-direction: column;
+        justify-content: flex-start;
+        justify-self: auto;
+    }
+    .foot_knop{
+        background-color: hsl(202, 15%, 93%);
+        color: hsl(0, 0%, 20%);
+        font-size: 18px;
+        padding: 10px;
+        border: 0px;
+        font-size: 12px;
+    }
+    .foot_knop:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .par_foot {
+        padding: 5px;
+        margin: 0px;
+        border-radius: 35px;
+        border: 2px solid hsl(202, 15%, 93%);
+        width: 75vh;
+        height: 45px;
+        align-self: start;
     }
 
     a{
@@ -109,28 +143,28 @@
         border: 2px solid hsl(202, 15%, 93%);
         width: 75vh;
         height: 45px;
-        align-self: center;
     }
 
     .par_lang{
         font-size: 12px;
-        padding: 10px;
+        padding: 0px;
+        margin: 0px;
     }
 </style>
 
 <body>
     <header>
         <form class="head_form" action="https://www.google.com/intl/nl/gmail/about/">
-            <button class="knop_head" type="submit" value="gmail">gmail</button>
+            <button class="knop_head" type="submit" value="gmail">Gmail</button>
         </form>
         <form class="head_form" action="https://www.google.be/imghp?hl=nl&tab=wi&ogbl">
-            <button class="knop_head" type="submit">afbeeldingen</button>
+            <button class="knop_head" type="submit">Afbeeldingen</button>
         </form>
         <form class="head_form" action="https://www.google.be/intl/nl/about/products?tab=ih">
-            <button class="knop_head">fig</button>
+            <button class="knop_head"><i class="fa fa-th" aria-hidden="true"></i></button>
         </form>
         <form class="head_form"  action="https://accounts.google.com/signin/v2/identifier?hl=nl&passive=true&continue=https%3A%2F%2Fwww.google.be%2Fimghp%3Fhl%3Dnl%26tab%3Dwi%26ogbl&ec=GAZAAg&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
-            <button class="knop_head">inloggen</button>
+            <button class="knop_login">Inloggen</button>
         </form>
     </header>
     
@@ -167,17 +201,21 @@
         </p>
         
     </div>
-     <footer>
-       links naar disclaimer etc
-       <input>
-   </footer>
+    <footer>
+        <p class="par_foot">
+            België
+        </p>
+        <p class="par_foot">
+            <form action="" style="justify-self: start;">
+                <button class="foot_knop" type="submit">Adverteren</button>
+            </form>
+            <form action="" style="justify-self: center;">
+                <button class="foot_knop" type="submit">Bedrijf</button>
+            </form>
+        </p>
+        
+       
+    </footer>
   
-
-
 </body>
-
-
-
-
-
 </html>
